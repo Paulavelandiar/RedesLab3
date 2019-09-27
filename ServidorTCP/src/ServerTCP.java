@@ -56,7 +56,9 @@ public class ServerTCP
 				    }
 				    System.out.println("Resultado Digest: " + hexString.toString() + "\n");
 				    
-				    escritor.writeUTF(hexString.toString());
+				    String prueba = hexString.toString();
+				    
+				    escritor.writeUTF(prueba);
 				   
 				}
 			}
