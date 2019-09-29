@@ -154,9 +154,10 @@ public class ClientTCP
 	{
 		return "Hice prueba:" + prueba;
 	}
+	
 	public String meLlegoEsto()
 	{
-		return "Me llego esto" + llego;
+		return "PRUEBA CORRECTA, resultado: " + llego;
 	}
 
 	public void seleccionarArchivo(int archivo2) {
