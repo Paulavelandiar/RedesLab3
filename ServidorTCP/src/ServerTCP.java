@@ -100,7 +100,7 @@ public class ServerTCP
 
 								bf.write("El archivo fue confirmado por parte del cliente "+ idCliente + "\n");
 
-								bf.write("El tiempo que se demoro el archivo en escribirse y llegar fue de " + (tiempoFinal-tiempoInicial)/(1000000000) + " segundos "+" \n");
+								bf.write("El tiempo que se demoro el archivo en escribirse y llegar fue de " + (tiempoFinal-tiempoInicial)/(1000000) + " segundos "+" \n");
 
 								break;
 							}

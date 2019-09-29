@@ -1,0 +1,8 @@
+Sun Sep 29 16:17:36 COT 2019 
+Se va a enviar el archivo ArchivoEnviar.txt de tamaño 0 
+El archivo no fue confirmado por parte del cliente 1:13 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo ArchivoEnviar.txt de tamaño 0 
+El archivo fue confirmado por parte del cliente 1:13
+El tiempo que se demoro el archivo en escribirse y llegar fue de 0 segundos  
+Sun Sep 29 16:17:36 COT 2019 
