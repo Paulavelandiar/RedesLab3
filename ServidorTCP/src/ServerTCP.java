@@ -35,9 +35,9 @@ public class ServerTCP
 				DataOutputStream escritor = new DataOutputStream(socketServidor.getOutputStream());
 				DataInputStream lector = new DataInputStream(socketServidor.getInputStream());
 
-				System.out.println("He aceptado la conexión" + "\n");
+				System.out.println("He aceptado la conexion" + "\n");
 
-				System.out.println("Enviando confirmación..." + "\n");
+				System.out.println("Enviando confirmacion..." + "\n");
 				escritor.writeUTF("OK");
 
 				String mensajeServidor = lector.readUTF();
@@ -60,14 +60,14 @@ public class ServerTCP
 								archivo = new File("./data/");
 							}
 							byte[] arrayFile = new byte[(int) archivo.length()];
-							bf.write("Se va a enviar el archivo "+ archivo.getName() +" de tamaño " + arrayFile.length + " \n");
+							bf.write("Se va a enviar el archivo "+ archivo.getName() +" de tamano " + arrayFile.length + " \n");
 
 							tiempoInicial = System.nanoTime();
 							escritor.write(arrayFile.length);
 
 							escritor.write(arrayFile, 0, arrayFile.length);
 
-							System.out.println("Envié archivo: " + arrayFile + "\n");
+							System.out.println("Envio archivo: " + arrayFile + "\n");
 
 							System.out.println("Procedo a hacer la prueba de integridad" + "\n");						
 
