@@ -17,6 +17,7 @@ public class ClientTCP
 	DataInputStream lector; 
 
 	byte[] archivo;
+	int archivoSeleccionado = 0;
 	String prueba;
 	String llego;
 
@@ -35,66 +36,89 @@ public class ClientTCP
 
 				recibirConfirmacion();
 				escritor.writeUTF("OK");
-
-				avisarArchivos();
-				escritor.writeUTF("OK");
-
-				while(true) {
-
-					byte[] tamano = new byte[lector.readInt()];
-
-					lector.read(tamano, 0, tamano.length);
-					archivo = tamano;
-					avisarRecibido();
-
-					avisarInicioPrueba();					
-
-					MessageDigest md = MessageDigest.getInstance("SHA-256");
-
-					md.update(tamano);
-					byte[] digest = md.digest();      
-
-					StringBuffer hexString = new StringBuffer();
-
-					for (int i = 0;i<digest.length;i++) 
-					{
-						hexString.append(Integer.toHexString(0xFF & digest[i]));
-					}
-					prueba = hexString.toString();
-
-					//-------------------AQUÍ ESTALLA-------------------------
-					try {
-						// 	llego = lector.readUTF();
-						byte[] integridad = new byte[lector.read()];
-
-
-						lector.read(integridad, 0, integridad.length);
-
-						//StringBuffer llegada = new StringBuffer();
-
-						llego = new String(integridad);
-
-						System.out.println(llego);
-					}
-					catch(Exception e)
-					{
-						e.printStackTrace();
-					}
-					//--------------------------------------------------------
-
-					//Comparación
-
-					if(llego.equals(prueba)) 
-					{
-						escritor.writeUTF("OK");
-						break;
-					}
-					else {
-						escritor.writeUTF("ERROR");
-					}
-				}
-
+				this.procesarArchivo();
 			}
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}		
+	}
+
+
+	private void procesarArchivo()
+	{
+		try 
+		{		
+			avisarArchivos();
+			escritor.writeUTF("OK");
+
+
+
+			while(true) {
+
+				byte[] tamano = new byte[lector.read()];
+
+				lector.read(tamano, 0, tamano.length);
+				archivo = tamano;
+				avisarRecibido();
+
+				avisarInicioPrueba();					
+
+				MessageDigest md = MessageDigest.getInstance("SHA-256");
+
+				md.update(tamano);
+				byte[] digest = md.digest();      
+
+				StringBuffer hexString = new StringBuffer();
+
+				for (int i = 0;i<digest.length;i++) 
+				{
+					hexString.append(Integer.toHexString(0xFF & digest[i]));
+				}
+				prueba = hexString.toString();
+
+				//-------------------AQUÍ ESTALLA-------------------------
+				try {
+					// 	llego = lector.readUTF();
+					int len = lector.read();
+					byte[] integridad = new byte[len];
+
+					if(len == 0) {
+						System.out.println("La longitud a leer es: " + len);
+						Thread.currentThread().sleep(500);
+						len = lector.read();
+					}
+
+					lector.read(integridad);
+					llego = new String(integridad);
+					escritor.writeUTF("YA");
+
+
+					//StringBuffer llegada = new StringBuffer();
+
+
+					System.out.println(llego);
+				}
+				catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+				//--------------------------------------------------------
+
+				//Comparación
+				if(llego.equals(prueba)) 
+				{
+					escritor.writeUTF("OK");			
+					System.out.println("son iguales: " + llego+" : " + prueba);
+					break;
+				}
+				else {
+					escritor.writeUTF("ERROR");
+					System.out.println("no son iguales: **" + llego+"** : " + prueba);
+				}
+			}
+
 
 			socketCliente.close();
 		} 
@@ -103,6 +127,8 @@ public class ClientTCP
 			e.printStackTrace();
 		}		
 	}
+
+
 
 	public String recibirConfirmacion()
 	{
@@ -131,5 +157,13 @@ public class ClientTCP
 	public String meLlegoEsto()
 	{
 		return "Me llego esto" + llego;
+	}
+
+	public void seleccionarArchivo(int archivo2) {
+
+		this.archivoSeleccionado = archivo2;
+
+		this.procesarArchivo();
+
 	}
 }

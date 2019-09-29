@@ -1,7 +1,11 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -15,9 +19,19 @@ public class ServerTCP
 		{
 			Scanner scanner = new Scanner(System.in);
 			ServerSocket socketServer = new ServerSocket(8080);
+			System.out.println("Elija un archivo");
+			System.out.println("1-100MiB");
+			System.out.println("2-250MiB");
+			int arch = Integer.parseInt(scanner.nextLine());
+			int clientes = 0;
 			while(true) {
-				Socket socketServidor = socketServer.accept();
 
+				PrintWriter bf = new PrintWriter(new BufferedWriter(new FileWriter("./data/logs.txt",true)));
+				bf.write(new Date() + " \n");
+				bf.flush();
+				Socket socketServidor = socketServer.accept();
+				clientes ++;
+				String idCliente = clientes + ":" + (int)(Math.random()*20);
 				DataOutputStream escritor = new DataOutputStream(socketServidor.getOutputStream());
 				DataInputStream lector = new DataInputStream(socketServidor.getInputStream());
 
@@ -29,15 +43,26 @@ public class ServerTCP
 				String mensajeServidor = lector.readUTF();
 
 				if(mensajeServidor.equals("OK"))
-				{
+				{	
+
 					String confirmacionArchivos = lector.readUTF();
 
 					if(confirmacionArchivos.equals("OK"))
 					{
 						while(true) {
-							File archivo = new File("ArchivoEnviar.txt");
+							long tiempoInicial =0;
+							long tiempoFinal =0;
+							File archivo = null;
+							if(arch == 1) {
+								archivo = new File("./data/ArchivoEnviar.txt");
+							}
+							else {
+								archivo = new File("./data/");
+							}
 							byte[] arrayFile = new byte[(int) archivo.length()];
+							bf.write("Se va a enviar el archivo "+ archivo.getName() +" de tamaño " + arrayFile.length + " \n");
 
+							tiempoInicial = System.nanoTime();
 							escritor.write(arrayFile.length);
 
 							escritor.write(arrayFile, 0, arrayFile.length);
@@ -59,13 +84,31 @@ public class ServerTCP
 							}
 							System.out.println("Resultado Digest: " + hexString.toString() + "\n");
 
-							String prueba = hexString.toString();	
+							String prueba = hexString.toString();
 							escritor.writeInt(prueba.getBytes().length);
+							System.out.println("Estoy en el servidor, mando len : **" + prueba.getBytes().length + "***");
 							escritor.writeBytes(prueba);
-							System.out.println(prueba.getBytes().length);
+
+							if(lector.readUTF().equals("YA")){
+								tiempoFinal = System.nanoTime();
+								System.out.println("Estoy en el servidor, en el YA");
+							}
+
 							//Si no es correcto la integridad, se vuelve a enviar el archivo
-							if(lector.readUTF().equals("OK")) {
+							String conf = lector.readUTF();
+							if(conf.equals("OK")) {
+
+								bf.write("El archivo fue confirmado por parte del cliente "+ idCliente + "\n");
+
+								bf.write("El tiempo que se demoro el archivo en escribirse y llegar fue de " + (tiempoFinal-tiempoInicial)/(1000000000) + " segundos "+" \n");
+
 								break;
+							}
+							else {
+								bf.write("El archivo no fue confirmado por parte del cliente "+ idCliente + " \n");
+
+								bf.write("Se procede a volver a enviar el archivo" + " \n");
+
 							}
 						}
 
@@ -73,6 +116,8 @@ public class ServerTCP
 
 					}
 				}
+				bf.flush();
+				bf.close();
 				socketServidor.close();
 			} 
 		}

@@ -37,8 +37,8 @@ public class Interfaz extends JFrame
 	
 	public Interfaz()
 	{
+
 		cliente = new ClientTCP();
-		
 		setTitle ("Cliente");
 		setSize (500, 453);
 		setResizable(false);
@@ -100,21 +100,21 @@ public class Interfaz extends JFrame
 		
 		textServer1.setText(cliente.recibirConfirmacion());
 		setVisible(true);
+		
 
-		int confirmacion = JOptionPane.showConfirmDialog(this, "¿Quiere continuar?");	
-		if(confirmacion == 0)
-		{
-			continuar();
-		}
+		continuar();
 	}
 	
 	public void continuar()
 	{
+//		int archivo = Integer.parseInt(JOptionPane.showInputDialog(this, "Que archivo desea? 1 o 2?", "Seleccionar Archivo", JOptionPane.QUESTION_MESSAGE));	
+			
+//		cliente.seleccionarArchivo(archivo);
 		textServer2.setText(cliente.avisarRecibido());
 		textServer3.setText(cliente.avisarArchivos());
 		
-		int confirmacion = JOptionPane.showConfirmDialog(this, "¿Desea hacer la prueba de integridad?");	
-		if(confirmacion == 0)
+		int confirmacion1 = JOptionPane.showConfirmDialog(this, "¿Desea hacer la prueba de integridad?");	
+		if(confirmacion1 == 0)
 		{
 			textServer4.setText(cliente.avisarInicioPrueba());
 			textServer5.setText(cliente.avisarFinalPrueba());
