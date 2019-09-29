@@ -118,6 +118,7 @@ public class Interfaz extends JFrame
 		{
 			textServer4.setText(cliente.avisarInicioPrueba());
 			textServer5.setText(cliente.avisarFinalPrueba());
+			textServer6.setText(cliente.meLlegoEsto());
 		}
 	}
 	
