@@ -54,10 +54,10 @@ public class ServerTCP
 							long tiempoFinal =0;
 							File archivo = null;
 							if(arch == 1) {
-								archivo = new File("./data/ArchivoEnviar.txt");
+								archivo = new File("./data/100p.png");
 							}
 							else {
-								archivo = new File("./data/");
+								archivo = new File("./data/250p.png");
 							}
 							byte[] arrayFile = new byte[(int) archivo.length()];
 							bf.write("Se va a enviar el archivo "+ archivo.getName() +" de tamano " + arrayFile.length + " \n");
