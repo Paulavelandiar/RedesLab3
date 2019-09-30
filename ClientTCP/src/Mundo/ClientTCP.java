@@ -20,7 +20,7 @@ public class ClientTCP
 	int archivoSeleccionado = 0;
 	String prueba;
 	String llego;
-
+	int cont=0;
 	public ClientTCP()
 	{
 		try 
@@ -74,11 +74,14 @@ public class ClientTCP
 
 				for (int i = 0;i<digest.length;i++) 
 				{
-					hexString.append(Integer.toHexString(0xFF & digest[i]));
+					hexString.append(Integer.toHexString(0xFF & digest[i]).toLowerCase());
+				}if(cont==0) {
+					prueba=(String)hexString.toString();
+					cont++;
 				}
-				prueba = hexString.toString();
+				
 
-				//-------------------AQUÍ ESTALLA-------------------------
+				//-------------------AQUÃ ESTALLA-------------------------
 				try {
 					// 	llego = lector.readUTF();
 					int len = lector.read();
@@ -86,7 +89,7 @@ public class ClientTCP
 
 					if(len == 0) {
 						System.out.println("La longitud a leer es: " + len);
-						Thread.currentThread().sleep(500);
+						Thread.currentThread().sleep(5000);
 						len = lector.read();
 					}
 
@@ -95,28 +98,28 @@ public class ClientTCP
 					escritor.writeUTF("YA");
 
 
-					//StringBuffer llegada = new StringBuffer();
 
 
-					System.out.println(llego);
+					System.out.println("la que llega es "+llego);
+					//ComparaciÃ³n
+					if(llego.equals(prueba)) 
+					{
+						escritor.writeUTF("OK");			
+						System.out.println("son iguales: " + llego+" : " + prueba);
+						break;
+					}
+					else {
+						escritor.writeUTF("ERROR");
+						System.out.println("no son iguales: **" + llego+"** : " + prueba);
+					}
 				}
 				catch(Exception e)
 				{
-					e.printStackTrace();
+					e.printStackTrace();//11e431c215c5bd334cecbd43148274edf3ffdbd6cd6479fe279577fbe5f52ce6
 				}
 				//--------------------------------------------------------
 
-				//Comparación
-				if(llego.equals(prueba)) 
-				{
-					escritor.writeUTF("OK");			
-					System.out.println("son iguales: " + llego+" : " + prueba);
-					break;
-				}
-				else {
-					escritor.writeUTF("ERROR");
-					System.out.println("no son iguales: **" + llego+"** : " + prueba);
-				}
+				
 			}
 
 
@@ -142,7 +145,7 @@ public class ClientTCP
 
 	public String avisarRecibido()
 	{
-		return "He avisado que recibí un archivo: " + archivo;
+		return "He avisado que recibÃ­ un archivo: " + archivo;
 	}
 
 	public String avisarInicioPrueba()
