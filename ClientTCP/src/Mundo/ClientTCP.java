@@ -1,12 +1,12 @@
 package Mundo;
+
+import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.File;
-import java.io.IOException;
 import java.net.*;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.*;
+
 
 
 public class ClientTCP 
@@ -57,17 +57,30 @@ public class ClientTCP
 
 			while(true) {
 
-				byte[] tamano = new byte[lector.read()];
-
-				lector.read(tamano, 0, tamano.length);
-				archivo = tamano;
+				
+				byte[] sizeAr = new byte[8192];
+				
+				ByteArrayOutputStream bos = new ByteArrayOutputStream();
+		        
+				int read;
+		        while((read = lector.read(sizeAr)) != -1){
+		            bos.write(sizeAr, 0, read);
+		            System.out.println(lector.available());
+		            bos.flush();
+		            if(lector.available() == 0) {break;}
+		        }
+		        System.out.println("Aquí");
+		        
+		        escritor.writeUTF("OK");
+		        
+				//archivo = sizeAr;
 				avisarRecibido();
 
 				avisarInicioPrueba();					
 
 				MessageDigest md = MessageDigest.getInstance("SHA-256");
 
-				md.update(tamano);
+				md.update(bos.toByteArray());
 				byte[] digest = md.digest();      
 
 				StringBuffer hexString = new StringBuffer();
@@ -77,26 +90,26 @@ public class ClientTCP
 					hexString.append(Integer.toHexString(0xFF & digest[i]));
 				}
 				prueba = hexString.toString();
-
-				//-------------------AQUÍ ESTALLA-------------------------
+				
+				System.out.println("La prueba es: " + prueba);
+				
 				try {
-					// 	llego = lector.readUTF();
-					int len = lector.read();
-					byte[] integridad = new byte[len];
-
-					if(len == 0) {
-						System.out.println("La longitud a leer es: " + len);
-						Thread.currentThread().sleep(500);
-						len = lector.read();
-					}
-
-					lector.read(integridad);
-					llego = new String(integridad);
+					
+//					byte[] integridad = new byte[256];
+//					
+//					ByteArrayOutputStream bos2 = new ByteArrayOutputStream();
+//			        
+//					int read1;
+//			        while((read1 = lector.read(integridad)) != 1){
+//			        	System.out.println(read1);
+//			            bos2.write(integridad, 0, read1);
+//			        }
+//					llego = new String(integridad);
+					
+					llego = lector.readUTF();
+					System.out.println(llego);
+					
 					escritor.writeUTF("YA");
-
-
-					//StringBuffer llegada = new StringBuffer();
-
 
 					System.out.println(llego);
 				}

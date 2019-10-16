@@ -6,3 +6,401 @@ Se va a enviar el archivo ArchivoEnviar.txt de tamaño 0
 El archivo fue confirmado por parte del cliente 1:13
 El tiempo que se demoro el archivo en escribirse y llegar fue de 0 segundos  
 Sun Sep 29 16:17:36 COT 2019 
+Sun Sep 29 20:12:18 COT 2019 
+Sun Sep 29 20:31:00 COT 2019 
+Sun Sep 29 20:41:12 COT 2019 
+Sun Sep 29 21:07:05 COT 2019 
+Sun Sep 29 21:16:43 COT 2019 
+Sun Sep 29 21:23:58 COT 2019 
+Sun Sep 29 21:28:34 COT 2019 
+Sun Sep 29 21:29:29 COT 2019 
+Sun Sep 29 21:32:07 COT 2019 
+Sun Sep 29 21:33:39 COT 2019 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.jpg de tamano 4 
+El archivo no fue confirmado por parte del cliente 1:5 
+Se procede a volver a enviar el archivo 
+Se va a enviar el archivo David.Sun Sep 29 21:38:36 COT 2019 
+Sun Sep 29 21:59:20 COT 2019 
+Sun Sep 29 22:01:52 COT 2019 
+Sun Sep 29 22:28:40 COT 2019 
+Sun Sep 29 22:39:35 COT 2019 
+Sun Sep 29 22:40:31 COT 2019 
+Sun Sep 29 22:45:07 COT 2019 
+Sun Sep 29 22:46:25 COT 2019 
+Sun Sep 29 22:52:53 COT 2019 
+Sun Sep 29 22:54:30 COT 2019 
+Tue Oct 15 22:34:41 COT 2019 
+Tue Oct 15 22:36:01 COT 2019 
+Tue Oct 15 23:04:57 COT 2019 
+Tue Oct 15 23:10:14 COT 2019 
+Tue Oct 15 23:14:11 COT 2019 
+Tue Oct 15 23:15:15 COT 2019 
+Tue Oct 15 23:16:58 COT 2019 
+Tue Oct 15 23:18:17 COT 2019 
+Tue Oct 15 23:19:49 COT 2019 
+Tue Oct 15 23:21:01 COT 2019 
+Tue Oct 15 23:22:46 COT 2019 
+Tue Oct 15 23:23:14 COT 2019 
+Tue Oct 15 23:25:44 COT 2019 
+Wed Oct 16 08:16:03 COT 2019 
+Wed Oct 16 08:20:30 COT 2019 
+Wed Oct 16 08:23:00 COT 2019 
+Wed Oct 16 08:24:25 COT 2019 
+Wed Oct 16 08:27:48 COT 2019 
+Wed Oct 16 08:32:09 COT 2019 
+Wed Oct 16 08:33:13 COT 2019 
+Wed Oct 16 08:36:31 COT 2019 
+Wed Oct 16 08:37:58 COT 2019 
+Wed Oct 16 08:38:41 COT 2019 
+Wed Oct 16 08:39:28 COT 2019 
+Wed Oct 16 08:48:53 COT 2019 
+Wed Oct 16 08:50:03 COT 2019 
+Wed Oct 16 08:51:35 COT 2019 
+Wed Oct 16 08:54:44 COT 2019 
+Wed Oct 16 08:57:03 COT 2019 
+Wed Oct 16 08:57:47 COT 2019 
+Wed Oct 16 09:21:02 COT 2019 
+Wed Oct 16 09:25:48 COT 2019 
+Wed Oct 16 09:27:10 COT 2019 
+Wed Oct 16 09:27:43 COT 2019 
+Wed Oct 16 09:28:29 COT 2019 
+Wed Oct 16 09:30:26 COT 2019 
+Wed Oct 16 09:31:34 COT 2019 
+Wed Oct 16 09:34:20 COT 2019 
+Se va a enviar el archivo 100p.png de tamano 0 
+El archivo fue confirmado por parte del cliente 1:14
+El tiempo que se demoro el archivo en escribirse y llegar fue de 3134 segundos  
+Wed Oct 16 09:34:27 COT 2019 

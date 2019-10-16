@@ -1,8 +1,10 @@
-import java.io.BufferedReader;
+import java.io.BufferedInputStream;
 import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,6 +12,7 @@ import java.net.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
+
 
 public class ServerTCP 
 {
@@ -59,21 +62,36 @@ public class ServerTCP
 							else {
 								archivo = new File("./data/250p.png");
 							}
-							byte[] arrayFile = new byte[(int) archivo.length()];
-							bf.write("Se va a enviar el archivo "+ archivo.getName() +" de tamano " + arrayFile.length + " \n");
+
+					        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+					        
+							bf.write("Se va a enviar el archivo "+ archivo.getName() +" de tamano " + byteArrayOutputStream.toByteArray().length + " \n");
 
 							tiempoInicial = System.nanoTime();
-							escritor.write(arrayFile.length);
+							
+							
+							
+							BufferedInputStream bis = new BufferedInputStream(new FileInputStream(archivo));
+							
+							int in = 0;
+							byte[] byteArray = new byte[8192];
+							 while ((in = bis.read(byteArray)) != -1){
+								 escritor.write(byteArray,0,in);
+								 byteArrayOutputStream.write(byteArray,0,in);
+							 }
+							 
+							 bis.close();
 
-							escritor.write(arrayFile, 0, arrayFile.length);
+							System.out.println(byteArrayOutputStream.toByteArray().length);
+							if(lector.readUTF().equals("OK")) {
 
-							System.out.println("Envio archivo: " + arrayFile + "\n");
+							System.out.println("Envio archivo: " + byteArrayOutputStream.toByteArray().length + "\n");
 
 							System.out.println("Procedo a hacer la prueba de integridad" + "\n");						
-
+							
 							MessageDigest md = MessageDigest.getInstance("SHA-256");
-
-							md.update(arrayFile);
+							
+							md.update(byteArrayOutputStream.toByteArray());
 							byte[] digest = md.digest();      
 
 							StringBuffer hexString = new StringBuffer();
@@ -85,9 +103,10 @@ public class ServerTCP
 							System.out.println("Resultado Digest: " + hexString.toString() + "\n");
 
 							String prueba = hexString.toString();
-							escritor.writeInt(prueba.getBytes().length);
-							System.out.println("Estoy en el servidor, mando len : **" + prueba.getBytes().length + "***");
-							escritor.writeBytes(prueba);
+							
+							System.out.println("Estoy en el servidor, mando len : **" + prueba.getBytes().length + "***" +" Con arreglo de Bytes :" + prueba.getBytes());
+							
+							escritor.writeUTF(prueba);
 
 							if(lector.readUTF().equals("YA")){
 								tiempoFinal = System.nanoTime();
@@ -109,6 +128,7 @@ public class ServerTCP
 
 								bf.write("Se procede a volver a enviar el archivo" + " \n");
 
+							}
 							}
 						}
 
