@@ -20,7 +20,7 @@ public class ClientTCP
 	int archivoSeleccionado = 0;
 	String prueba;
 	String llego;
-
+	int cont=0;
 	public ClientTCP()
 	{
 		try 
@@ -87,7 +87,10 @@ public class ClientTCP
 
 				for (int i = 0;i<digest.length;i++) 
 				{
-					hexString.append(Integer.toHexString(0xFF & digest[i]));
+					hexString.append(Integer.toHexString(0xFF & digest[i]).toLowerCase());
+				}if(cont==0) {
+					prueba=(String)hexString.toString();
+					cont++;
 				}
 				prueba = hexString.toString();
 				
@@ -95,41 +98,31 @@ public class ClientTCP
 				
 				try {
 					
-//					byte[] integridad = new byte[256];
-//					
-//					ByteArrayOutputStream bos2 = new ByteArrayOutputStream();
-//			        
-//					int read1;
-//			        while((read1 = lector.read(integridad)) != 1){
-//			        	System.out.println(read1);
-//			            bos2.write(integridad, 0, read1);
-//			        }
-//					llego = new String(integridad);
-					
 					llego = lector.readUTF();
 					System.out.println(llego);
 					
 					escritor.writeUTF("YA");
 
 					System.out.println(llego);
+
+					System.out.println("la que llega es "+llego);
+					if(llego.equals(prueba)) 
+					{
+						escritor.writeUTF("OK");			
+						System.out.println("son iguales: " + llego+" : " + prueba);
+						break;
+					}
+					else {
+						escritor.writeUTF("ERROR");
+						System.out.println("no son iguales: **" + llego+"** : " + prueba);
+					}
 				}
 				catch(Exception e)
 				{
 					e.printStackTrace();
 				}
-				//--------------------------------------------------------
 
-				//Comparación
-				if(llego.equals(prueba)) 
-				{
-					escritor.writeUTF("OK");			
-					System.out.println("son iguales: " + llego+" : " + prueba);
-					break;
-				}
-				else {
-					escritor.writeUTF("ERROR");
-					System.out.println("no son iguales: **" + llego+"** : " + prueba);
-				}
+				
 			}
 
 
@@ -155,7 +148,7 @@ public class ClientTCP
 
 	public String avisarRecibido()
 	{
-		return "He avisado que recibí un archivo: " + archivo;
+		return "He avisado que recibÃ­ un archivo: " + archivo;
 	}
 
 	public String avisarInicioPrueba()
